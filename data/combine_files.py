@@ -10,20 +10,20 @@
 # val: emotion, intent, wiki
 import pandas as pd
 
-data_train = pd.read_json('~/code/PMDialogueSystem/data/preprocess_data/open_dialog_kg/train.json')
-data_test = pd.read_json('~/code/PMDialogueSystem/data/preprocess_data/open_dialog_kg/test.json')
-data_val = pd.read_json('~/code/PMDialogueSystem/data/preprocess_data/open_dialog_kg/val.json')
+data_train = pd.read_json('/data/xfni/code/PMDialogueSystem/data/preprocess_data/open_dialog_kg/train.json')
+data_test = pd.read_json('/data/xfni/code/PMDialogueSystem/data/preprocess_data/open_dialog_kg/test.json')
+data_val = pd.read_json('/data/xfni/code/PMDialogueSystem/data/preprocess_data/open_dialog_kg/val.json')
 
 data_train.rename(columns={'knowledge': "wiki"}, inplace=True)
 data_test.rename(columns={'knowledge': "wiki"}, inplace=True)
 data_val.rename(columns={'knowledge': "wiki"}, inplace=True)
 
 data_train.to_json(
-    path_or_buf='~/code/PMDialogueSystem/data/preprocess_data/open_dialog_kg/train.json',
+    path_or_buf='/data/xfni/code/PMDialogueSystem/data/preprocess_data/open_dialog_kg/train.json',
     orient='records')
 data_test.to_json(
-    path_or_buf='~/code/PMDialogueSystem/data/preprocess_data/open_dialog_kg/test.json',
+    path_or_buf='/data/xfni/code/PMDialogueSystem/data/preprocess_data/open_dialog_kg/test.json',
     orient='records')
 data_val.to_json(
-    path_or_buf='~/code/PMDialogueSystem/data/preprocess_data/open_dialog_kg/val.json',
+    path_or_buf='/data/xfni/code/PMDialogueSystem/data/preprocess_data/open_dialog_kg/val.json',
     orient='records')

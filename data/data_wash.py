@@ -1,4 +1,4 @@
-# ~/code/anaconda/bin/python
+# /data/xfni/code/anaconda/bin/python
 # -*- coding: utf-8 -*-
 # @Time         : 2023/3/12 12:42
 # @Author       : patrick

@@ -22,7 +22,7 @@ def clean(sentence):
 
 
 # count = 0
-# data = pd.read_json(f'~/code/PMDialogueSystem/data/empathetic/parsed_emotion_Ekman_intent_train.json')
+# data = pd.read_json(f'/data/xfni/code/PMDialogueSystem/data/empathetic/parsed_emotion_Ekman_intent_train.json')
 # writer = open('empathetic/train.txt', 'w')
 # utter = data['utterence']
 # for x in utter:
@@ -38,7 +38,7 @@ def clean(sentence):
 # writer.close()
 # print(count)
 count = 0
-data = pd.read_json(f'~/code/PMDialogueSystem/data/empathetic/parsed_emotion_Ekman_intent_valid.json')
+data = pd.read_json(f'/data/xfni/code/PMDialogueSystem/data/empathetic/parsed_emotion_Ekman_intent_valid.json')
 writer = open('empathetic/val.txt', 'w')
 utter = data['utterence']
 for x in utter:
@@ -55,7 +55,7 @@ writer.close()
 print(count)
 
 count = 0
-data = pd.read_json(f'~/code/PMDialogueSystem/data/empathetic/parsed_emotion_Ekman_intent_valid.json')
+data = pd.read_json(f'/data/xfni/code/PMDialogueSystem/data/empathetic/parsed_emotion_Ekman_intent_valid.json')
 writer = open('empathetic/val.txt', 'w')
 utter = data['utterence']
 for x in utter:
